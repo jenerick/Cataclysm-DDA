@@ -12654,9 +12654,9 @@ int player::get_melee() const
 void player::setID (int i)
 {
     if( id >= 0 ) {
-        debugmsg( "tried to set id of a npc/player, but has already a id: %d", id );
+        debugmsg( "tried to set the id of an npc/player that already has one: %d", id );
     } else if( i < -1 ) {
-        debugmsg( "tried to set invalid id of a npc/player: %d", i );
+        debugmsg( "tried to set invalid id of an npc/player: %d", i );
     } else {
         id = i;
     }

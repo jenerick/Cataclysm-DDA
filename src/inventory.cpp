@@ -696,7 +696,7 @@ item inventory::remove_item(const item *it)
     if( !tmp.empty() ) {
         return tmp.front();
     }
-    debugmsg("Tried to remove a item not in inventory (name: %s)", it->tname().c_str());
+    debugmsg("Tried to remove an item not in inventory (name: %s)", it->tname().c_str());
     return nullitem;
 }
 
